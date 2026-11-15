@@ -1,0 +1,211 @@
+html[data-tema="escuro"] body,
+html[data-tema="escuro"] header{
+    background-color: #141414 !important;
+}
+
+html[data-tema="escuro"] body{
+    color: #ffffff;
+}
+
+html[data-tema="escuro"] header li:not(.ativadoMenu):not(:hover),
+html[data-tema="escuro"] header a:not(.foto):not(:hover),
+html[data-tema="escuro"] .card h4,
+html[data-tema="escuro"] .card p,
+html[data-tema="escuro"] .combo h3,
+html[data-tema="escuro"] .combo li,
+html[data-tema="escuro"] .combo p,
+html[data-tema="escuro"] .item-info h4,
+html[data-tema="escuro"] .resumo-linha,
+html[data-tema="escuro"] .quantidade output,
+html[data-tema="escuro"] .vazio-caixa p,
+html[data-tema="escuro"] .popup-texto,
+html[data-tema="escuro"] .troca,
+html[data-tema="escuro"] .pedido-itens,
+html[data-tema="escuro"] .pedido-data,
+html[data-tema="escuro"] .pedidos-vazio,
+html[data-tema="escuro"] .modal-grupo legend{
+    color: #ffffff;
+}
+
+html[data-tema="escuro"] .item,
+html[data-tema="escuro"] .resumo,
+html[data-tema="escuro"] .login-caixa,
+html[data-tema="escuro"] .pedido,
+html[data-tema="escuro"] .card,
+html[data-tema="escuro"] .combo{
+    background-color: #141414;
+}
+
+html[data-tema="escuro"] .modal-caixa{
+    background-color: #141414;
+    color: #ffffff;
+}
+
+html[data-tema="escuro"] .bolinha-qtd{
+    border-color: #141414;
+}
+
+html[data-tema="escuro"] .campo input,
+html[data-tema="escuro"] .perfil-dados dd{
+    background-color: #141414;
+    color: #ffffff;
+}
+
+html[data-tema="escuro"] .resumo-total,
+html[data-tema="escuro"] .pedido-total{
+    color: #fde68f;
+}
+
+.btn-tema{
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 32px;
+    border: 2px solid #9874b2;
+    border-radius: 99px;
+    background: transparent;
+    color: #9874b2;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.btn-tema:hover{
+    background-color: #9874b2;
+    color: #fcf8ec;
+}
+
+.btn-tema:focus-visible{
+    outline: 3px solid #fde68f;
+    outline-offset: 3px;
+}
+
+@media (max-width: 1100px){
+    header{ padding: 0 24px; }
+    header ul{ margin: 16px 0; font-size: 1.25rem; }
+
+    .titulo{ margin-top: 130px; padding-left: 48px; }
+    .categoria{ padding: 48px 48px 32px 48px; }
+    .caixa-sobre{ padding-top: 110px !important; }
+
+    section.promo{ margin-top: 100px; }
+    .carrossel{ width: 90%; }
+
+    .rodape-topo{ padding: 48px 48px 32px 48px; gap: 32px; }
+    .rodape-base{ padding: 20px 48px; }
+}
+
+@media (max-width: 800px){
+    header ul{ font-size: .9rem; }
+
+    .grade{ grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+    .combo,
+    .combo:nth-of-type(even){
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .combo:nth-of-type(even) .combo-img{ order: 0; }
+
+    .rodape-topo{ grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 500px){
+
+    header{
+        padding: 0 16px;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    header.menu-aberto{
+        box-shadow: 0 8px 24px rgba(36, 27, 44, .25);
+    }
+
+    header ul{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 8px 0;
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    header ul a.foto{
+        order: -1;
+        display: block;
+        width: 48px;
+    }
+
+    header .foto img,
+    #animar-imagem{
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        animation: none !important;
+        width: 48px !important;
+        margin: 0 !important;
+        display: block;
+    }
+
+    header ul a:not(.foto){
+        display: none;
+        animation: none;
+    }
+
+    header.menu-aberto ul a:not(.foto){
+        display: block;
+    }
+
+    header ul a:not(.foto) li{
+        padding: 14px 4px;
+        border-top: 1px solid rgba(152, 116, 178, .25);
+    }
+
+    header .bolinha-carrinho{
+        position: static;
+        margin-left: 8px;
+    }
+
+    .titulo{ margin-top: 96px; padding-left: 20px; }
+    .categoria{ padding: 32px 20px 24px 20px; }
+    .caixa-sobre{ padding: 96px 16px 60px !important; }
+
+    section.promo{ margin-top: 80px; }
+    .carrossel{ width: 94%; }
+
+    .grade{ grid-template-columns: 1fr; }
+
+    .banner-historia{ flex-direction: column; padding: 28px 20px; text-align: center; }
+    .texto-historia h1{ font-size: 28px; }
+    .faixa-numeros{ padding: 24px 16px; }
+
+    .item{ grid-template-columns: 72px 1fr; gap: 14px; padding: 12px; }
+    .item img{ width: 72px; height: 72px; }
+    .item-info h4{ font-size: 1.15rem; }
+
+    .modal{ padding: 10px; }
+    .modal-caixa{ padding: 24px 18px; gap: 18px; }
+    .modal-caixa h3{ font-size: 1.4rem; }
+
+    .login-caixa{ padding: 22px 16px; }
+
+    .rodape-topo{
+        grid-template-columns: 1fr;
+        padding: 40px 24px 24px 24px;
+        gap: 28px;
+    }
+    .rodape-base{
+        flex-direction: column;
+        padding: 20px 24px;
+    }
+
+    .btn-tema{ max-width: calc(100% - 40px); }
+}

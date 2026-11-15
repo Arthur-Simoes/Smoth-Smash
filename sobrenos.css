@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcf8ec;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+header{
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    z-index: 99;
+    background-color: #fcf8ec;
+}
+
+header img {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 5%;
+    margin: 1%;
+} 
+
+header ul a.foto {
+    width: 5%;
+    display: block;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    margin: 3%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 200%;
+}
+@keyframes pulo{
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.35); }
+    100% { transform: scale(1); }
+}
+
+.rodape{
+    background-color: #9874b2;
+    color: #fcf8ec;
+    margin-top: 80px;
+}
+
+.rodape-topo{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding: 64px 200px 48px 200px;
+}
+
+.rodape-marca img{
+    width: 90px;
+    margin-bottom: 16px;
+}
+
+.rodape-marca p{
+    max-width: 32ch;
+    line-height: 1.5;
+}
+
+.rodape h5{
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 16px;
+    color: #fde68f;
+}
+
+.rodape ul{
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.rodape a{
+    color: #fcf8ec;
+    text-decoration: none;
+}
+
+.rodape ul a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.rodape-base{
+    border-top: 1px solid rgba(252, 248, 236, .35);
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: .9rem;
+}
+
+:root {
+    --fundo-pagina: #FAF5EA;
+    --fundo-caixa: #FFFFFF;
+    --roxo: #8B6BA3;
+    --roxo-escuro: #6D4E85;
+    --amarelo: #F7E078;
+    --cor-texto: #1E1824;
+    --cor-texto-suave: #5C5266;
+}
+
+
+
+body, header, footer, .caixinha, .caixa-convite, .banner-historia {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+body {
+    background-color: var(--fundo-pagina);
+    color: var(--cor-texto);
+}
+
+
+
+.caixa-sobre {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 40px 20px 70px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+
+.banner-historia {
+    background-color: var(--roxo);
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.etiqueta {
+    background-color: var(--amarelo);
+    color: #1E1824;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.texto-historia h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.amarelo {
+    color: var(--amarelo);
+}
+
+.texto-historia p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 550px;
+}
+
+
+.selo-ano {
+    width: 170px;
+    height: 170px;
+    background-color: var(--roxo-escuro);
+    border: 4px dashed var(--amarelo);
+    border-radius: 50%;
+    color: var(--amarelo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.selo-ano strong {
+    font-size: 40px;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.selo-ano span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.titulo-meio {
+    text-align: center;
+    font-size: 28px;
+    color: var(--roxo);
+    margin-bottom: 30px;
+}
+
+.tres-caixas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.caixinha {
+    background-color: var(--fundo-caixa);
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid rgba(139, 107, 163, 0.25);
+    transition: transform 0.3s, background-color 0.4s;
+}
+
+.caixinha:hover {
+    transform: translateY(-8px);
+}
+
+.icone {
+    font-size: 36px;
+    background-color: var(--roxo);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid var(--amarelo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.caixinha h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.caixinha p {
+    color: var(--cor-texto-suave);
+    line-height: 1.5;
+}
+
+
+.faixa-numeros {
+    background-color: var(--roxo);
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.faixa-numeros strong {
+    display: block;
+    font-size: 36px;
+    color: var(--amarelo);
+}
+
+
+.caixa-convite {
+    background-color: var(--fundo-caixa);
+    border: 3px solid var(--roxo);
+    border-radius: 22px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.caixa-convite h2 {
+    color: var(--roxo);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.caixa-convite p {
+    color: var(--cor-texto-suave);
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.botao-cardapio {
+    background-color: var(--amarelo);
+    color: #1E1824;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 32px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.botao-cardapio:hover {
+    transform: scale(1.06);
+}
+
+
+.animar {
+    animation:  0.8s ease forwards;
+}
+
+@keyframes subirSuave {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.caixa-sobre {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 130px 20px 80px !important; 
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+html[data-tema="escuro"] {
+    --fundo-caixa: #241D2D;
+    --roxo: #593E6E;
+    --roxo-escuro: #3D284D;
+    --cor-texto: #FAF5EA;
+    --cor-texto-suave: #C8BED4;
+}
+
+html[data-tema="escuro"] .titulo-meio,
+html[data-tema="escuro"] .caixa-convite h2 {
+    color: var(--amarelo);
+}
