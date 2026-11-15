@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothies</title>
+    <link rel="stylesheet" href="style-sem-animacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="tema.css">
+    <link rel="icon" type="image/png" href="Smooth%20%26%20Smash-Photoroom.png">
+</head>
+<body>
+    <header>
+    <ul>
+        <a href="index.html">
+            <li class="opcaoMenu">Menu</li>
+        </a>
+        <a href="hamburguers.html">
+            <li class="opcaoMenu">Hambúrgueres</li>
+        </a>
+        <a href="smoothies.html">
+            <li class="ativadoMenu">Smoothies</li>
+        </a>
+        <a href="index.html" class="foto">
+            <li><img src="Smooth & Smash-Photoroom.png" alt="Logo Smoosh & Smash"></li>
+        </a>
+        <a href="login.html">
+            <li class="opcaoMenu">Log In</li>
+        </a>
+        <a href="sobrenos.html">
+            <li class="opcaoMenu">Sobre Nós</li>
+        </a>
+        <a href="carrinho.html">
+            <li class="opcaoMenu">Carrinho<span class="bolinha-qtd bolinha-carrinho" id="bolinha-carrinho" hidden></span></li>
+        </a>
+    </ul>
+</header>
+
+<h2 class="titulo"><span class="marca">Smoothies</span></h2>
+
+<section class="categoria">
+    <h3 class="subtitulo"><span class="marca">Frutas</span></h3>
+    <div class="grade">
+        <article class="card">
+            <img src="frutas1.png" alt="Hambúrguer Colosso">
+            <h4>Banana com Morango</h4>
+            <p>Um Smoothie Bowl refrescante para o dia a dia, com a base de morango e banana, decorado com rodelas de banana, morangos frescos, cortes de melancia e cubos de manga.</p>
+            <div class="card-rodape">
+                <span class="preco">R$ 14,90</span>
+                <button class="btn-carrinho" type="button" data-id="12" aria-label="Adicionar Colosso ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="frutas2.png" alt="Hambúrguer Smash Junior">
+            <h4>Tropical</h4>
+            <p> Uma explosão refrescante com base de spirulina azul, sabor de abacaxi com manga e finalizado com kiwi, mirtilos frescos, lascas de coco e um toque crocante de granola. </p>
+            <div class="card-rodape">
+                <span class="preco">R$ 15,90</span>
+                <button class="btn-carrinho" type="button" data-id="13" aria-label="Adicionar Smash Junior ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="frutas3.png" alt="Nome do hambúrguer">
+            <h4>Frutas Vermelhas</h4>
+            <p>Levemente cítrico, esse bowl traz um sabor intenso das frutas vermelhas com uma cobertura generosa de morango e mirtilos.</p>
+            <div class="card-rodape">
+                <span class="preco">R$ 14,60</span>
+                <button class="btn-carrinho" type="button" data-id="14" aria-label="Adicionar Nome ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="categoria">
+    <div class="grade">
+        <article class="card">
+            <img src="frutas4.png" alt="Nome do hambúrguer">
+            <h4>Açai</h4>
+            <p>O clássico irresistível em versão especial. Creme de açaí gelado e finalizado com frutas frescas selecionadas, granola crocante e um toque de flores comestíveis.</p>
+            <div class="card-rodape">
+                <span class="preco">R$ 16,00</span>
+                <button class="btn-carrinho" type="button" data-id="15" aria-label="Adicionar Nome ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="frutas5.png" alt="Nome do hambúrguer">
+            <h4>Limão e Manga</h4>
+            <p>Base verde refrescante com toque cítrico de limão, equilibrado com manga fresca e doce, banana em rodelas e  lascas de chocolate branco.</p>
+            <div class="card-rodape">
+                <span class="preco">R$ 12,90</span>
+                <button class="btn-carrinho" type="button" data-id="16" aria-label="Adicionar Nome ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="frutas6.png" alt="Hambúrguer Double Chicken Cheddar">
+            <h4>Framboesa</h4>
+            <p>Base cremosa intensa de framboesa, acompanhado de rodelas de banana fresca e uma cobertura generosa de lascas de chocolate branco.</p>
+            <div class="card-rodape">
+                <span class="preco">R$ 15,90</span>
+                <button class="btn-carrinho" type="button" data-id="17" aria-label="Adicionar Double Chicken Cheddar ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="categoria">
+    <h3 class="subtitulo"><span class="marca">Sabores Unicos</span></h3>
+    <div class="grade">
+        <article class="card">
+            <img src="sb1.png" alt="Nome do hambúrguer">
+            <h4>Diamante Negro</h4>
+            <p>Base cremosa de maracujá, creme aveludado e gelado, finalizado com banana fresca, calda instensa de chocolate e pedaços crocantes de diamante negro.</p>
+            <div class="card-rodape">
+                <span class="preco">R$ 20,00</span>
+                <button class="btn-carrinho" type="button" data-id="18" aria-label="Adicionar Nome ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="sb2.png" alt="Nome do hambúrguer">
+            <h4>Laka</h4>
+            <p>Base aveludada de manga, coberto com rodelas de banana fresca, calda de chocolate branco e pedaços de Laka.</p>
+            <div class="card-rodape">
+                <span class="preco">R$ 20,00</span>
+                <button class="btn-carrinho" type="button" data-id="19" aria-label="Adicionar Nome ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="sb3.png" alt="Nome do hambúrguer">
+            <h4>Amendoim</h4>
+            <p>Creme encorpado de amendoim, finalizado com rodelas de banana, chocolate meio amargo picado e amendoim caramelizado crocante.
+</p>
+            <div class="card-rodape">
+                <span class="preco">R$ 18,00</span>
+                <button class="btn-carrinho" type="button" data-id="20" aria-label="Adicionar Nome ao carrinho" title="Adicionar ao carrinho">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+        </article>
+    </div>
+</section>
+<footer class="rodape">
+    <div class="rodape-topo">
+        <div class="rodape-marca">
+            <img src="Smooth & Smash-Photoroom.png" alt="Logo Smooth & Smash">
+            <p>Hambúrguer smash e smoothie bowl no mesmo cardápio.</p>
+        </div>
+
+        <nav>
+            <h5>Cardápio</h5>
+            <ul>
+                <li><a href="hamburguers.html">Hambúrgueres</a></li>
+                <li><a href="index.html">Smoothies</a></li>
+                <li><a href="index.html">Combos</a></li>
+                <li><a href="index.html">Carrinho</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h5>Atendimento</h5>
+            <ul>
+                <li>Seg a Dom: 11h às 23h</li>
+                <li>(00) 00000-0000</li>
+                <li>contato@smooth&smash.com.br</li>
+            </ul>
+        </div>
+
+        <div>
+            <h5>Redes</h5>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">iFood</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="rodape-base">
+        <span>© 2026 Smooth &amp; Smash. Todos os direitos reservados.</span>
+        <span>Imagens meramente ilustrativas.</span>
+    </div>
+</footer>
+    <script src="carrinho.js"></script>
+    <script src="tema.js"></script>
+</body>

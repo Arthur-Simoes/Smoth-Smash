@@ -1,0 +1,190 @@
+
+.login-secao{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.login-caixa{
+    width: min(520px, 100%);
+    display: grid;
+    gap: 28px;
+    padding: 32px;
+    border: 2px solid #9874b2;
+    border-radius: 24px;
+    background-color: #fffdf6;
+}
+
+.login-abas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.aba{
+    padding: 12px 20px;
+    border: 2px solid #9874b2;
+    border-radius: 99px;
+    background: transparent;
+    color: #9874b2;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.aba:hover{
+    background-color: rgba(152, 116, 178, .12);
+}
+
+.aba.ativa{
+    background-color: #9874b2;
+    color: #fcf8ec;
+}
+
+.aba:focus-visible,
+.link:focus-visible{
+    outline: 3px solid #fde68f;
+    outline-offset: 2px;
+}
+
+.login-form{
+    display: grid;
+    gap: 18px;
+}
+
+.login-form[hidden]{
+    display: none;
+}
+
+.login-form h3{
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #9874b2;
+}
+
+.campo{
+    display: grid;
+    gap: 6px;
+}
+
+.campo label{
+    padding-left: 20px;
+    font-weight: 800;
+    color: #9874b2;
+}
+
+.campo input{
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #9874b2;
+    border-radius: 99px;
+    background-color: #fcf8ec;
+    color: #241b2c;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.campo input::placeholder{
+    color: rgba(152, 116, 178, .6);
+}
+
+.campo input:focus-visible{
+    outline: 3px solid #fde68f;
+    outline-offset: 2px;
+}
+
+.campo input.invalido{
+    border-color: #b3261e;
+}
+
+.erro{
+    padding-left: 20px;
+    color: #b3261e;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.erro:empty{
+    display: none;
+}
+
+.msg{
+    padding: 12px 20px;
+    border-radius: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.msg:empty{
+    display: none;
+}
+
+.msg.ok{
+    background-color: #fde68f;
+    color: #7b5897;
+}
+
+.msg.falha{
+    background-color: #fbe3e1;
+    color: #b3261e;
+}
+
+.btn-principal{
+    padding: 14px 24px;
+    border: 0;
+    border-radius: 99px;
+    background-color: #9874b2;
+    color: #fcf8ec;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color .3s ease, opacity .3s ease;
+}
+
+.btn-principal:hover:not(:disabled){
+    background-color: #7b5897;
+}
+
+.btn-principal:focus-visible{
+    outline: 3px solid #fde68f;
+    outline-offset: 3px;
+}
+
+.btn-principal:disabled{
+    opacity: .45;
+    cursor: not-allowed;
+}
+
+.troca{
+    text-align: center;
+    color: #241b2c;
+}
+
+.link{
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #9874b2;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: #7b5897;
+}
+
+@media (max-width: 700px){
+    .login-caixa{
+        padding: 24px 18px;
+    }
+}
